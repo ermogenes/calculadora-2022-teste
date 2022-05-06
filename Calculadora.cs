@@ -12,7 +12,7 @@ public class Calculadora
         Console.Write("B = ");
         b = Convert.ToDouble(Console.ReadLine());
 
-        resultado = a + b;
+        resultado = Aritmetica.Soma(a, b);
 
         Console.WriteLine($"{a} somado com {b} é {resultado}");
 
@@ -34,7 +34,7 @@ public class Calculadora
         Console.Write("B = ");
         b = Convert.ToDouble(Console.ReadLine());
 
-        resultado = a - b;
+        resultado = Aritmetica.Subtracao(a, b);
 
         Console.WriteLine($"{a} subtraindo {b} é {resultado}");
 
@@ -56,7 +56,7 @@ public class Calculadora
         Console.Write("B = ");
         b = Convert.ToDouble(Console.ReadLine());
 
-        resultado = a * b;
+        resultado = Aritmetica.Multiplicacao(a, b);
 
         Console.WriteLine($"{a} multiplicado por {b} é {resultado}");
 
@@ -84,7 +84,7 @@ public class Calculadora
         }
         else
         {
-            resultado = a / b;
+            resultado = Aritmetica.Divisao(a, b);
 
             Console.WriteLine($"{a} dividido por {b} é {resultado}");
         }
